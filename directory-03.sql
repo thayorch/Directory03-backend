@@ -1,11 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 5.2.0
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Jun 14, 2023 at 07:33 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,7 +34,6 @@ CREATE TABLE `m6/66` (
 --
 
 INSERT INTO `m6/66` (`name`, `number`, `fb`, `ig`, `pic`, `ex`) VALUES
-('nick', 0, 'Facebook', 'IG', 'picture', 'เพิ่มเติม(พิมพ์อะไรก็ได้เกี่ยวกับตัวเอง)'),
 ('แชมป์', 1, 'champ pacharapon', '-', 'https://drive.google.com/uc?export=view&id=1z34oqtV9yO9vQ2mpQOGwyJ5wPxMmtBfD', 'ชอบเล่นบาส'),
 ('เฟียต', 2, 'Pacharasorn Khumprakong', '-', 'https://drive.google.com/uc?export=view&id=1hXesnpbqmcnbwB6YB0p0OoUDgwyzUWwj', 'ชอบเล่นเกมมากมาก'),
 ('โฟกัส', 3, 'Cus Aang', 'Cus Aang', 'https://drive.google.com/uc?export=view&id=1TObal9HeG4WcoiA39cV-nuxQ7QvKMH6n', 'Physics'),

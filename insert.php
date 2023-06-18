@@ -8,7 +8,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "directory-03";
+    $dbname = "directory_03";
 
     $input = json_decode(file_get_contents("php://input"));
 

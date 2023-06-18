@@ -6,7 +6,7 @@
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $dbname = "directory-03";
+        $dbname = "directory_03";
         
         $db = new Database($servername,$dbname,$username,$password);
 
