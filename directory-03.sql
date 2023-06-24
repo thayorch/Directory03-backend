@@ -49,7 +49,7 @@ INSERT INTO `m6/66` (`name`, `number`, `fb`, `ig`, `pic`, `ex`) VALUES
 ('น.ไนท์', 14, 'YYasatsawinn PPanyawaii', 'ysswn.n1ght_', 'https://drive.google.com/uc?export=view&id=1wl72Zn8LHTieOGlVdxpi95dr0o_GSwvc', 'ชอบคนที่อายุมากกว่า'),
 ('บอส', 15, 'Nontanan Narongrit', 'natnonnan.n', 'https://drive.google.com/uc?export=view&id=1fQV--_JsSIUPKEddioD2Lcy3GFF_210Y', 'ʘ‿ʘ สวัสดีครับ'),
 ('โอชิ', 16, 'Supakorn Tejakaew', '-', 'https://drive.google.com/uc?export=view&id=1Ug6tFWDYJrweUFaKSjDNIsPKYuvkrHeG', ''),
-('แทนคุณ', 17, 'Tankoon Pratumpong', '-', 'https://drive.google.com/uc?export=view&id=1-9xLm-UXwOh-UdCU9XUh6jFRirtHZ0BE', ''),
+('แทนคุณ', 17, 'Tankoon Pratumpong', '-', 'https://drive.google.com/uc?export=view&id=1FKv31MkD3bSb-J71APZB3nsJKoCMCqU9', ''),
 ('โอม', 18, 'Chotipat Chittawattananukun', 'o.0h_mm', 'https://drive.google.com/uc?export=view&id=1eYNLXfaOV4bFx4I8tM6IqhkF88KzH_xD', ''),
 ('บุ๊ค', 19, 'Sarunpat Sangpak', 'sarunpat.book', 'https://drive.google.com/uc?export=view&id=1N3X6h__RkMxxI_2EyHlpscR6-Qs1-9jy', '-'),
 ('บัณฑิต', 20, 'Pataranan wongrattrikun', '-', 'https://drive.google.com/uc?export=view&id=18OYEVwH4EQfN3gOjqEzV-K_1A0gnGAT6', 'เป็นคนที่ดีคับ เยี่ยมๆ'),
