@@ -1,4 +1,11 @@
-
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jun 25, 2023 at 07:10 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -11,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `directory-03`
+-- Database: `directory_03`
 --
 
 -- --------------------------------------------------------
@@ -87,7 +94,14 @@ CREATE TABLE `posting_db` (
 --
 
 INSERT INTO `posting_db` (`id`, `TimeStamp`, `name`, `description`) VALUES
-(1, '2023-06-14 16:58:37', 'test', 'test');
+(1, '2023-06-14 09:58:37', 'test', 'test'),
+(2, '2023-06-18 14:47:22', 'ice', 'asasdfjkl;'),
+(3, '2023-06-24 15:00:29', 'thayorch', 'ฝากบอกน้องก้องฮัฟฟ พี่ม.6รักนะจุ๊บมั๊วะะ'),
+(4, '2023-06-24 15:13:01', '#น้ำตาจระเข้', 'ฝากบอกน้อนๆสายสามเตรียมตัวจับสายเลยค้าบบ'),
+(5, '2023-06-24 15:35:40', '#พี่ไม่มีหลุยวิตตอง', 'สวัสดีฮัฟฟฟฟอันนี้ทดสอบระบบด้วยข้อความยาวๆๆๆๆๆๆๆๆหลายพันเมตรเลยแหละนะว้าววสุดย้อดไปเลย'),
+(6, '2023-06-24 16:08:43', '#Yo', 'อิอิ'),
+(7, '2023-06-24 16:28:14', '#สวัสดีครับโผมมม', 'ทดสอบระะบบบ1234567812381273'),
+(8, '2023-06-24 16:31:17', '#ผมชื่อธยอร์ช', 'ฝากบอกน้องไอซืว่าพี่คนดีรักจริงแต่เธอก็ทิ้งพี่ไป');
 
 --
 -- Indexes for dumped tables
@@ -107,7 +121,7 @@ ALTER TABLE `posting_db`
 -- AUTO_INCREMENT for table `posting_db`
 --
 ALTER TABLE `posting_db`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
