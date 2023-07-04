@@ -13,4 +13,5 @@
 
         $sql = $db->query('SELECT * FROM `posting_db` ');
         echo(json_encode($sql));
+        
 ?>
