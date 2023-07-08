@@ -1,10 +1,9 @@
-<?php
+<?php session_start();
     header("Access-Control-Allow-Origin: *");
     header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
     header("Access-Control-Allow-Headers: Content-Type ");
     header('Content-type: text/plain; charset=utf-8');
-
-    $out = array('error' => false);
+    require_once('config.php');
 
     $servername = "localhost";
     $username = "root";
@@ -13,32 +12,24 @@
     $input = json_decode(file_get_contents("php://input"));
 
     if(($input != null) and ($input != '') and (!empty($input))) {
-        
-        $method = $_SERVER['REQUEST_METHOD'];
-        $request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+        $user = $input->username ;
+        $pass = $input->$password;
+        $db = new Database($servername,$dbname,$username,$password);
+        $sql = $db->query('SELECT * FROM `admin_db`');
+
+        while ($row = $stmt->fetch(PDO::FETCH_NUM, PDO::FETCH_ORI_NEXT)) {
+            $data = $row[0] . "\t" . $row[1] . "\t" . $row[2] . "\n";
+            return $data;
         }
-
-        switch ($method){
-            case 'POST':
-                $username = $input->username;
-                $password = $input->$password;
-
-                $sql = "SELECT * from admin_db WHERE username=$username AND passwords=$password";
-
-                $query = $conn->query($sql);
-                
-                if($query->num_rows>0){
-                    $row=$query->fetch_array();
-                    $_SESSION['user']=$row['id'];
-                    var_dump("Login Successful");
+        
+            $row = %data;
+            $_SESSION['id'] = $row['id'];
+            $_SESSION['nickname'] = $row['nickname'];
+        } else {
+            var_dump(json_encode($data));
+            var_dump("Error: " . $sql . "<br>" . $conn->error);
                 }
-                
-                $conn->close();
-                die();
-            }
+$conn->close();
         }
 ?>
