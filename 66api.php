@@ -11,6 +11,6 @@
         
         $db = new Database($servername,$dbname,$username,$password);
 
-        $sql = $db->query('SELECT * FROM `m6/66` ');
+        $sql = $db->query('SELECT * FROM `m6_66` ');
         echo(json_encode($sql));
 ?>
