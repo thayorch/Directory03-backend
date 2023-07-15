@@ -28,13 +28,10 @@
                 $name = $input->name;
                 $description = $input->description;
         
-                $sql = "INSERT INTO posting_db (name, description) 
-                VALUES ('".$name."','".$description."')";
-                if ($conn->query($sql) === TRUE) {
-                    var_dump("Insert data successfully") ;
-                } else {
-                    var_dump("Error: " . $sql . "<br>" . $conn->error);
-                }
+                $sql = "INSERT INTO posting_db (name, description) VALUES ('".$name."','".$description."')";
+                if ($conn->query($sql) === TRUE) var_dump("Insert data successfully");
+                else var_dump("Error: " . $sql . "<br>" . $conn->error);
+                
                 $conn->close();
             }
     }
