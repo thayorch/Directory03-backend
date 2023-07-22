@@ -19,9 +19,8 @@
             $db = new Database($servername,$dbname,$username,$password);
             $sql = $db->query('SELECT id,username,passwords FROM `admin_db`');
             foreach($sql as $i => $i_value) {
-                
                 if(($user == $sql[$i]['username']) and ($pass == $sql[$i]['passwords']) ) {
-                    var_dump("admin");
+                    echo("admin");
                     break;
                 }else if($user == NULL and $pass == NULL) continue;
             }
