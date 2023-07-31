@@ -5,34 +5,13 @@
     header('Content-type: text/plain; charset=utf-8');
     require_once('config.php');
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "directory_03";
     $input = json_decode(file_get_contents("php://input"));
+    $name = $input->name;
+    $description = $input->description;
 
+    var_dump($input);
     if(($input != null) and ($input != '') and (!empty($input))) {
-        
-        $method = $_SERVER['REQUEST_METHOD'];
-        $request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-
-        // Connection & Check connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
-
-        if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-        }
-
-        switch ($method){
-            case 'POST':
-                $name = $input->name;
-                $description = $input->description;
-        
-                $sql = "INSERT INTO posting_db (name, description) VALUES ('".$name."','".$description."')";
-                if ($conn->query($sql) === TRUE) var_dump("Insert data successfully");
-                else var_dump("Error: " . $sql . "<br>" . $conn->error);
-                
-                $conn->close();
-            }
+        $db = new Database($servername,$dbname,$username,$password);
+        $db->query("INSERT INTO posting_db (name, description) VALUES('$name', '$description')");
     }
 ?>
